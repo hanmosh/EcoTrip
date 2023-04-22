@@ -1,0 +1,21 @@
+.menu-container{
+    display: flex;
+    border: 5px solid whitesmoke;
+    background-color: whitesmoke; 
+    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-family: Didot, serif;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+html { 
+    background: url(https://images.photowall.com/products/64481/voguish-world-map-blue.jpg?h=699&q=85) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
