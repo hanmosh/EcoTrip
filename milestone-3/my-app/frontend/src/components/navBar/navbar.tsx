@@ -5,11 +5,18 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <div className="title-container">
-      <h1>Eco Trip</h1>   
+      <div className="ecoTrip-title">
+      <h1>
+        <a href="/">Eco Trip</a>
+      </h1> 
+      </div>
+
+      <div className="nav-links">
         <nav>
-            <Link className = "nav-item" to='/'>home</Link>
-            <Link className = "nav-item" to='/aboutme'>about me</Link>
+            <Link className = "nav-item" to='/aboutme'>Login</Link>
+            <Link className = "nav-item" to='/aboutme'>Sign Up</Link>
         </nav>
+        </div>  
     </div>
   );
 }

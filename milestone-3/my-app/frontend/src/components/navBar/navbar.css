@@ -5,6 +5,27 @@
     justify-content: space-between;
 } 
 
+.ecoTrip-title{
+    margin-left: 42vw;
+}
+
+h1 {
+    color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    animation: animate 20s linear infinite;
+    background-size: 1000%;
+    -webkit-background-size: 1000%;
+  }
+  
+  h1 a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
 /*for color changing text animation in navigation bar*/
 @keyframes animate{
     0%
@@ -22,12 +43,14 @@
 }
 
 .title-container{
-    background-color: whitesmoke; 
-    border-radius: 25px;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    /* border-radius: 25px; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 2%;
     padding-bottom: 1%;
 }
+

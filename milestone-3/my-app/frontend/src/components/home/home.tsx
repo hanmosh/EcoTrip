@@ -9,15 +9,15 @@ export default function Home() {
         { recipes.map(recipe =>
             <RecipePreview 
               // external = {false} 
-              name = {recipe.name} 
-              image = {recipe.image} 
-              description = {recipe.description} 
-              imgAltName = {recipe.imgAltName} 
+              // name = {recipe.name} 
+              // image = {recipe.image} 
+              // description = {recipe.description} 
+              // imgAltName = {recipe.imgAltName} 
               buttonHref = {recipe.buttonHref}
-              ingredients = {recipe.ingredients}
-              instructions = {recipe.instructions}
-              orig_link_name = {recipe.orig_link_name}
-              orig_link = {recipe.orig_link}
+              // ingredients = {recipe.ingredients}
+              // instructions = {recipe.instructions}
+              // orig_link_name = {recipe.orig_link_name}
+              // orig_link = {recipe.orig_link}
             />
           )}
       </div>

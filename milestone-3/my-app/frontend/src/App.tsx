@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"; 
 import RecipePage from './components/RecipePage'
+import Menu from './components/menu/menu'
 import Navbar from "./components/navBar/navbar";
 import About from "./components/aboutMe/aboutme";
 import Home from "./components/home/home";
@@ -36,11 +37,11 @@ function App() {
   return (
     <body>
       <BrowserRouter>  
-       <Navbar/>
+      <Navbar/>
         <Routes>
               <Route path = "/aboutme" element ={<About/>}/>
               <Route path = "/" element = {<Home/>} />
-              <Route path = "/:name" element ={<RecipePage/>}/>
+              <Route path = "/menu" element ={<Menu/>}/>
         </Routes>
       </BrowserRouter>
     </body>
