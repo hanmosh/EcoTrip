@@ -4,8 +4,7 @@ import Form from './form';
 function App() {
     return (
         <div>
-          <Form question="Where is your departure?" />
-          <Form question="Where is your destination?" />
+          <Form />
         </div>
       );
 }

@@ -7,14 +7,16 @@ export default function Navbar() {
     <div className="title-container">
       <div className="ecoTrip-title">
       <h1>
-        <a href="/">Eco Trip</a>
+        <a href="/">EcoTrip</a>
       </h1> 
       </div>
 
       <div className="nav-links">
         <nav>
-            <Link className = "nav-item" to='/logIn'>Login</Link>
-            <Link className = "nav-item" to='/signIn'>Sign Up</Link>
+            <Link className = "btn btn-white btn-animate" to='/logIn'>Login</Link>
+            <Link className="btn btn-white btn-animate" to= "/signIn">Sign Up</Link>
+
+            {/* <a href="/signIn" className="btn btn-white btn-animate">Sign Up</a> */}
         </nav>
         </div>  
     </div>

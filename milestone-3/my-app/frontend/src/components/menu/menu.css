@@ -1,4 +1,4 @@
-.menu-container{
+/* .menu-container{
     display: flex;
     border: 5px solid whitesmoke;
     background-color: whitesmoke; 
@@ -10,20 +10,29 @@
     font-family: Didot, serif;
     padding-left: 10%;
     padding-right: 10%;
-}
+} */
 
-html { 
+/* html { 
     background: url(https://images.photowall.com/products/64481/voguish-world-map-blue.jpg?h=699&q=85) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+} */
 
 .clickable-images{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    position: absolute;
+    margin-top: 20vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
+
+img {
+    transition: transform 0.3s;
+  }
+  
+  img:hover {
+    transform: scale(1.2);
+  }
