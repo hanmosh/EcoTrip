@@ -1,10 +1,13 @@
+import React from 'react';
 import Form from './form';
 
-
-export default function App() {
+function App() {
     return (
         <div>
-          <Form />
+          <Form question="Where is your departure?" />
+          <Form question="Where is your destination?" />
         </div>
       );
 }
+
+export default App;

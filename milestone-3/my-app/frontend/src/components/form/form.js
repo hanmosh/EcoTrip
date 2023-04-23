@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './form.css';
 
 function Form() {
+
   const [submitting, setSubmitting] = useState(false);
   const [origin, setOrigin] = useState('');
   const [destination, setDestination] = useState('');
