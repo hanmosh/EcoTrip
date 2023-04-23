@@ -1,10 +1,12 @@
+import React from 'react';
 import Form from './form';
 
-
-export default function App() {
+function App() {
     return (
         <div>
           <Form />
         </div>
       );
 }
+
+export default App;
