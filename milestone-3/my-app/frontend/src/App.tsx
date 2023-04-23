@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"; 
-import RecipePage from './components/RecipePage'
 import Menu from './components/menu/menu'
 import Navbar from "./components/navBar/navbar";
-import About from "./components/aboutMe/aboutme";
+import Account from "./components/account/account";
 import Home from "./components/home/home";
-import { response } from 'express';
-import recipeData from './components/recipeData';
+import Form from "./components/form/form"; 
 
 interface Recipe{ 
   name: string;
@@ -39,9 +37,11 @@ function App() {
       <BrowserRouter>  
       <Navbar/>
         <Routes>
-              <Route path = "/aboutme" element ={<About/>}/>
+              <Route path = "/signIn" element ={<Account/>}/>
+              <Route path = "/logIn" element ={<Account/>}/>
               <Route path = "/" element = {<Home/>} />
               <Route path = "/menu" element ={<Menu/>}/>
+              <Route path = "/form" element ={<Form/>}/>
         </Routes>
       </BrowserRouter>
     </body>
