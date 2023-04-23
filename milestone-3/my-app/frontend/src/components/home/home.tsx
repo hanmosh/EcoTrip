@@ -5,7 +5,7 @@ import recipes, { Recipe } from "../recipeData";
 
 export default function Home() {
   return (
-    <div> 
+    <div>
         { recipes.map(recipe =>
             <RecipePreview 
               // external = {false} 
