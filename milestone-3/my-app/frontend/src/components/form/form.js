@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './form.css';
 
 function Form() {
-  const [submitting, setSubmitting] = useState(false);
+  const [submitting, setSubmitting,] = useState(false);
   const handleSubmit = event => {
     event.preventDefault();
    setSubmitting(true);
@@ -14,7 +14,7 @@ function Form() {
 
   return(
     <div className="wrapper">
-      <h1>Who's the goat? (its'lebron)</h1>
+      <h1>{props.question}</h1>
       {submitting &&
        <div>Submtting Form...</div>
      }
@@ -28,6 +28,8 @@ function Form() {
         <button type="submit">Submit</button>
       </form>
     </div>
+
+    
   )
 }
 
