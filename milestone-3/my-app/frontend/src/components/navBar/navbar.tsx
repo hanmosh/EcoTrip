@@ -13,8 +13,8 @@ export default function Navbar() {
 
       <div className="nav-links">
         <nav>
-            <Link className = "nav-item" to='/aboutme'>Login</Link>
-            <Link className = "nav-item" to='/aboutme'>Sign Up</Link>
+            <Link className = "nav-item" to='/logIn'>Login</Link>
+            <Link className = "nav-item" to='/signIn'>Sign Up</Link>
         </nav>
         </div>  
     </div>

@@ -1,8 +1,8 @@
 .recipe-container{
     display: flex;
-    border: 5px solid whitesmoke;
-    background-color: whitesmoke; 
-    border-radius: 25px;
+    /* border: 5px solid whitesmoke;
+    background-color: whitesmoke;  */
+    /* border-radius: 25px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;

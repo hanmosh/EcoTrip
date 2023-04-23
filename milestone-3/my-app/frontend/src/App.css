@@ -23,7 +23,7 @@
 }
 /*  */
 
-.recipe-container{
+/* .recipe-container{
   display: flex;
   border: 5px solid whitesmoke;
   background-color: whitesmoke; 
@@ -35,7 +35,7 @@
   font-family: Didot, serif;
   padding-left: 10%;
   padding-right: 10%;
-}
+} */
 
 .button-1{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
