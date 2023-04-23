@@ -37,7 +37,7 @@ function Form() {
 
   return (
     <div className="wrapper">
-      <h1>Origin and Destination</h1>
+      <h2>Enter your Origin and Destination</h2>
       {submitting && <div>Submitting Form...</div>}
       <form onSubmit={handleSubmit}>
         <fieldset>

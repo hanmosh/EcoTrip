@@ -67,12 +67,12 @@ h3 {
 }
 
 h2 {
-  padding: 2%;
+  /* padding: 2%; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: lavender;
-  border-radius: 25px;
-  padding-right: 40%;
-  padding-left: 40%;
+  /* background-color: rgba(245, 245, 245, 0.6);
+  border-radius: 25px; */
+  /* padding-right: 40%;
+  padding-left: 40%; */
   
 }
 

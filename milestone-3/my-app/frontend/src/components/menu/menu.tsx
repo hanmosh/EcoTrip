@@ -16,13 +16,13 @@ export default function Menu() {
         </a>
       </Link>
 
-      <Link to='/form'>
+      <Link to='/help'>
         <a className="aimage">
           <img src= {handshake} alt= "handshake" height="400" width="400"/>
         </a>
       </Link>
 
-      <Link to='/form'>
+      <Link to='/carbon'>
         <a className="aimage">
           <img src= {calculator} alt= "calculator" height="400" width="400"/>
         </a>

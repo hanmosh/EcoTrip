@@ -6,6 +6,8 @@ import Navbar from "./components/navBar/navbar";
 import Account from "./components/account/account";
 import Home from "./components/home/home";
 import Form from "./components/form/form"; 
+import Carbon from "./components/carbonEmissions/carbon"; 
+import Help from "./components/help/help"; 
 
 interface Recipe{ 
   name: string;
@@ -42,6 +44,8 @@ function App() {
               <Route path = "/" element = {<Home/>} />
               <Route path = "/menu" element ={<Menu/>}/>
               <Route path = "/form" element ={<Form/>}/>
+              <Route path = "/carbon" element ={<Carbon/>}/>
+              <Route path = "/help" element ={<Help/>}/>
         </Routes>
       </BrowserRouter>
     </body>
