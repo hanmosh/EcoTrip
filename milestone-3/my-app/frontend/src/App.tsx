@@ -5,9 +5,10 @@ import Menu from './components/menu/menu'
 import Navbar from "./components/navBar/navbar";
 import Account from "./components/account/account";
 import Home from "./components/home/home";
-import Form from "./components/form/form"; 
+import Form from "./components/data_visualization/form/form"; 
 import Carbon from "./components/carbonEmissions/carbon"; 
 import Help from "./components/help/help"; 
+import Recommendation from './components/data_visualization/form/recommendation/Recommendation';
 
 interface Recipe{ 
   name: string;
@@ -46,6 +47,7 @@ function App() {
               <Route path = "/form" element ={<Form/>}/>
               <Route path = "/carbon" element ={<Carbon/>}/>
               <Route path = "/help" element ={<Help/>}/>
+              <Route path="/recommendation" element={<Recommendation />} />
         </Routes>
       </BrowserRouter>
     </body>

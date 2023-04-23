@@ -1,0 +1,29 @@
+.recommendation-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+  }
+  
+  .recommendation-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .recommendation-container ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .recommendation-container li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+    text-indent: -25px;
+    padding-left: 25px;
+  }
+  
