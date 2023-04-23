@@ -3,32 +3,64 @@ import './form.css';
 
 function Form() {
   const [submitting, setSubmitting] = useState(false);
-  const handleSubmit = event => {
+  const [origin, setOrigin] = useState('');
+  const [destination, setDestination] = useState('');
+
+  const handleSubmit = async event => {
     event.preventDefault();
-   setSubmitting(true);
+    setSubmitting(true);
 
-   setTimeout(() => {
-     setSubmitting(false);
-   }, 3000)
- }
+    await sendDataToAPI();
 
-  return(
+    setSubmitting(false);
+  };
+
+  const sendDataToAPI = async () => {
+    // Replace with the URL of your Django REST Framework API
+    const apiUrl = 'http://127.0.0.1:8000/carbon_footprint/calculate/';
+  
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ origin, destination }),
+    });
+  
+    if (response.ok) {
+      console.log('Data sent successfully');
+    } else {
+      console.error('Error sending data:', response.status);
+    }
+  };  
+
+  return (
     <div className="wrapper">
-      <h1>Who's the goat? (its'lebron)</h1>
-      {submitting &&
-       <div>Submtting Form...</div>
-     }
+      <h1>Origin and Destination</h1>
+      {submitting && <div>Submitting Form...</div>}
       <form onSubmit={handleSubmit}>
         <fieldset>
           <label>
-            <p>Name</p>
-            <input name="name" />
+            <p>Origin</p>
+            <input
+              name="origin"
+              value={origin}
+              onChange={e => setOrigin(e.target.value)}
+            />
+          </label>
+          <label>
+            <p>Destination</p>
+            <input
+              name="destination"
+              value={destination}
+              onChange={e => setDestination(e.target.value)}
+            />
           </label>
         </fieldset>
         <button type="submit">Submit</button>
       </form>
     </div>
-  )
+  );
 }
 
 export default Form;
