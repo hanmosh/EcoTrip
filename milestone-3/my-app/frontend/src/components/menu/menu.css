@@ -29,10 +29,10 @@
     margin-right: 5vw;
 }
 
-img {
+#image img {
     transition: transform 0.3s;
   }
   
-  img:hover {
+  #image img:hover {
     transform: scale(1.2);
   }

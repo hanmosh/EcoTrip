@@ -7,23 +7,23 @@ import handshake from './images/handshake.png';
    
 export default function Menu() {
   return (
-    <div className="clickable-images">
+    <div className="clickable-images" id = "image">
 
       <Link to='/form'>
 
-        <a>
+        <a className="aimage">
           <img src= {plane} alt= "plane" height="400" width="400"/>
         </a>
       </Link>
 
       <Link to='/form'>
-        <a>
+        <a className="aimage">
           <img src= {handshake} alt= "handshake" height="400" width="400"/>
         </a>
       </Link>
 
       <Link to='/form'>
-        <a>
+        <a className="aimage">
           <img src= {calculator} alt= "calculator" height="400" width="400"/>
         </a>
       </Link>
