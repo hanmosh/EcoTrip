@@ -69,3 +69,11 @@ button:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100px;
 }
+
+.welcome-class{
+    font-size: 400px;
+    position: "absolute";
+     top: "10%";
+      left: "50%";
+       transform: "translate(-50%, -50%)";
+}
