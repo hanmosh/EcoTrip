@@ -36,3 +36,9 @@ p.title{
   .petition{
     float: right;
   }
+
+.title {
+    font-weight: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
